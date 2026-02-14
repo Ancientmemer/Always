@@ -26,6 +26,17 @@ function accepted() {
     `;
 }
 
-function noClicked() {
-    alert("Are you sure? Think once more… maybe try pressing Yes 😌");
-}
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", function () {
+
+    const proposalBox = document.querySelector(".proposal");
+    const maxX = proposalBox.clientWidth - noBtn.offsetWidth;
+    const maxY = proposalBox.clientHeight - noBtn.offsetHeight;
+
+    const randomX = Math.floor(Math.random() * maxX);
+    const randomY = Math.floor(Math.random() * maxY);
+
+    noBtn.style.left = randomX + "px";
+    noBtn.style.top = randomY + "px";
+});

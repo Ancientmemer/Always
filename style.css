@@ -63,6 +63,15 @@ button:hover {
     background: #6f472b;
 }
 
+.no {
+    background: #999;
+    margin-left: 15px;
+}
+
+.no:hover {
+    background: #777;
+}
+
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}

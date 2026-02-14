@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: #f6f1eb;
+    color: #2c2c2c;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    background: #2c2c2c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #444;
+}
+
+.letter {
+    padding: 100px 20px;
+    max-width: 750px;
+    margin: auto;
+    animation: fadeIn 2s ease forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+.proposal {
+    margin-top: 60px;
+}
+
+.yes {
+    background: #8b5e3c;
+}
+
+.yes:hover {
+    background: #6f472b;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

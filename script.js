@@ -25,3 +25,7 @@ function accepted() {
         </div>
     `;
 }
+
+function noClicked() {
+    alert("Are you sure? Think once more… maybe try pressing Yes 😌");
+}

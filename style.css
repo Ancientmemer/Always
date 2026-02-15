@@ -68,7 +68,7 @@ button:hover {
 .no {
     background: #999;
     position: absolute;
-    left: 55%;
+    left: 50%;
     transition: 0.2s ease;
 }
 

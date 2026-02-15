@@ -27,10 +27,10 @@ function accepted() {
 }
 
 const noBtn = document.getElementById("noBtn");
+const proposalBox = document.querySelector(".proposal");
 
-noBtn.addEventListener("mouseover", function () {
+function moveNoButton() {
 
-    const proposalBox = document.querySelector(".proposal");
     const maxX = proposalBox.clientWidth - noBtn.offsetWidth;
     const maxY = proposalBox.clientHeight - noBtn.offsetHeight;
 
@@ -39,4 +39,13 @@ noBtn.addEventListener("mouseover", function () {
 
     noBtn.style.left = randomX + "px";
     noBtn.style.top = randomY + "px";
+}
+
+// Desktop (mouse hover)
+noBtn.addEventListener("mouseover", moveNoButton);
+
+// Mobile (touch / click)
+noBtn.addEventListener("click", function(e) {
+    e.preventDefault(); 
+    moveNoButton();
 });

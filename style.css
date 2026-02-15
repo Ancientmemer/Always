@@ -53,6 +53,8 @@ button:hover {
 
 .proposal {
     margin-top: 60px;
+    position: relative;
+    height: 150px;
 }
 
 .yes {
@@ -65,7 +67,9 @@ button:hover {
 
 .no {
     background: #999;
-    margin-left: 15px;
+    position: absolute;
+    left: 55%;
+    transition: 0.2s ease;
 }
 
 .no:hover {

@@ -54,14 +54,16 @@ button:hover {
 .proposal {
     margin-top: 60px;
     position: relative;
-    height: 220px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .yes {
     background: #8b5e3c;
+    margin-bottom: 25px;   /* THIS gives space */
 }
 
 .yes:hover {
@@ -71,7 +73,7 @@ button:hover {
 .no {
     background: #999;
     position: absolute;
-    top: 110px;   /* YES nte thazhe start position */
+    top: 120px;   /* starts below YES */
     transition: 0.2s ease;
 }
 
